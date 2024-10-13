@@ -1,4 +1,4 @@
-const ExperienceCard = ({ years, title, description }) => {
+const ProjectCard = ({ years, title, description }) => {
   return (
     <div className="py-4">
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
@@ -8,4 +8,4 @@ const ExperienceCard = ({ years, title, description }) => {
   );
 };
 
-export default ExperienceCard;
+export default ProjectCard;
