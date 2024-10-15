@@ -83,14 +83,14 @@ function App() {
                 rel="noreferrer">
                 Linkedin
               </a>
-              |
+              {/* |
               <a
                 target="_blank"
                 className="underline"
                 href="https://wa.me/6289627302553"
                 rel="noreferrer">
                 Whatsapp
-              </a>
+              </a> */}
             </div>
           </p>
         </div>
