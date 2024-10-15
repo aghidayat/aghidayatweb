@@ -9,7 +9,9 @@ function App() {
   useEffect(() => {
     async function fetchExperiences() {
       const response = await fetch(
-        "https://aghidayat.github.io/aghidayatweb/experiences.json",
+        "https://aghidayat.github.io/aghidayatweb/experiences.json?v=" +
+          new Date().getTime(),
+        { cache: "no-cache" },
       );
       const data = await response.json();
       setExperiences(data);
@@ -83,14 +85,14 @@ function App() {
                 rel="noreferrer">
                 Linkedin
               </a>
-              {/* |
+              |
               <a
                 target="_blank"
                 className="underline"
                 href="https://wa.me/6289627302553"
                 rel="noreferrer">
                 Whatsapp
-              </a> */}
+              </a>
             </div>
           </p>
         </div>
