@@ -267,7 +267,7 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      {/* <section className="py-12 px-4 sm:px-6 border-b">
+      <section className="py-12 px-4 sm:px-6 border-b">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">🌟 Testimonials</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -289,7 +289,7 @@ function App() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Contact Section */}
       <footer className="py-12 bg-gray-50 dark:bg-gray-950 px-4 sm:px-6">
