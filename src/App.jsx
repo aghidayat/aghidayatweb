@@ -2,6 +2,7 @@ import { useState } from "react";
 import ExperienceCard from "./components/ExperienceCard";
 import PortfolioCard from "./components/PortfolioCard";
 import BlogCard from "./components/BlogCard";
+import TestimonialCard from "./components/TestimonialCard";
 
 function App() {
   const translations = {
@@ -162,6 +163,26 @@ function App() {
     },
   ];
 
+  const testimonials = [
+    {
+      description: "Excellent specialist, Great Client, Should be 5 stars",
+      name: "Dmitry Kochkurov",
+      from: "I.W. Interpreters Worldwide Ltd | upwork.com",
+    },
+    {
+      description:
+        "Berkerjasama dengan Sdr. Adi Gunawan Hidayat sangat menyenangkan, Bekerja dengan mengutamakan Profesional, Sangat terbuka dengan ide dan masukan, Sabar dalam menerima Revisi, Serta bisa Improvisasi untuk memaksimalkan Aplikasi",
+      name: "Riyan Padhini",
+      from: "Direktur Operasional at PT. LAWANG BERKAH KREASI",
+    },
+  ];
+
+  const awards = [
+    "AWS Certified Solutions Architect – Associate (2023)",
+    "React Advanced Certification (2022)",
+    "West Java Province Student Skills Competition Finalists (2015)",
+  ];
+
   const [darkMode, setDarkMode] = useState(false);
   const [language, setLanguage] = useState("EN");
 
@@ -241,10 +262,11 @@ function App() {
             🏆 Certifications & Awards
           </h2>
           <ul className="list-disc pl-6">
-            <li className="mb-4">
-              AWS Certified Solutions Architect – Associate (2023)
-            </li>
-            <li className="mb-4">React Advanced Certification (2022)</li>
+            {awards.map((award, index) => (
+              <li key={index} className="mb-4">
+                {award}
+              </li>
+            ))}
           </ul>
         </div>
       </section>
@@ -271,22 +293,14 @@ function App() {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">🌟 Testimonials</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="border p-6 rounded-lg shadow-md bg-white dark:bg-gray-800">
-              <p className="text-gray-700 dark:text-gray-300">
-                {`"Adi is a fantastic developer who consistently delivers
-                high-quality work."`}
-              </p>
-              <h3 className="mt-4 font-bold">John Doe</h3>
-              <p className="text-sm text-gray-500">CEO at ExampleCorp</p>
-            </div>
-            <div className="border p-6 rounded-lg shadow-md bg-white dark:bg-gray-800">
-              <p className="text-gray-700 dark:text-gray-300">
-                {`"Working with Adi has been a great experience. His technical
-                skills are top-notch!"`}
-              </p>
-              <h3 className="mt-4 font-bold">Jane Smith</h3>
-              <p className="text-sm text-gray-500">Product Manager</p>
-            </div>
+            {testimonials.map((testimonial, index) => (
+              <TestimonialCard
+                key={index}
+                description={testimonial.description}
+                name={testimonial.name}
+                from={testimonial.from}
+              />
+            ))}
           </div>
         </div>
       </section>
