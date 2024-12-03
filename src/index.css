@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .dark {
-    @apply bg-zinc-800 text-white;
+    @apply bg-gray-900 text-white;
 }
 .light {
-    @apply bg-white text-black;
+    @apply bg-white text-gray-800;
 }
