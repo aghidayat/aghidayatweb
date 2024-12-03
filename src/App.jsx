@@ -1,23 +1,35 @@
 import { useState } from "react";
-import { useEffect } from "react";
 import ExperienceCard from "./components/ExperienceCard";
 
 function App() {
-  const [experiences, setExperiences] = useState([]);
-  const [darkMode, setDarkMode] = useState(false);
+  const experiences = [
+    {
+      years: "2023 - NOW",
+      title: "PT Ihsan Solusi | Fullstack Developer",
+      description:
+        "As a Fullstack Developer at PT Ihsan Solusi, I am responsible for designing and developing a comprehensive sharia banking system that adheres to Islamic financial principles. Leveraging Python for the backend and React.js for the frontend, I have built a robust and scalable system that enables efficient and secure banking operations",
+    },
+    {
+      years: "2020 - 2023",
+      title: "PT SIRKEL KREASI NUSANTARA | Fullstack Developer",
+      description:
+        "I Work as a Fullstack Developer, I use React.js, Next.js, Node.js, and Tailwind to develop modern web applications. My responsibilities include designing user interfaces, designing databases, managing application performance, and conducting tests to ensure optimal performance and a good user experience. I also keep abreast of the latest technology to create innovative solutions.",
+    },
+    {
+      years: "2017 - 2020",
+      title: "PT DATAQUEST LEVERAGE INDONESIA | FULLSTACK Developer",
+      description:
+        "I work as a Fullstack Developer, I use Laravel and Bootstrap to develop modern web applications for Learning Management System. My responsibilities include designing databases, managing application performance, and ensure optimal performance and a good user experience",
+    },
+    {
+      years: "2015 - 2017",
+      title: "PT PANEN MAYA DIGITAL | FRONTEND DEVELOPER",
+      description:
+        "I work as frontend developer, implementing responsive web design on every platform, api integration and working with back end team for data integration. Technologies utilized: HTML, CSS, Javascript, PHP",
+    },
+  ];
 
-  useEffect(() => {
-    async function fetchExperiences() {
-      const response = await fetch(
-        "https://aghidayat.github.io/aghidayatweb/experiences.json?v=" +
-          new Date().getTime(),
-        { cache: "no-cache" },
-      );
-      const data = await response.json();
-      setExperiences(data);
-    }
-    fetchExperiences();
-  }, []);
+  const [darkMode, setDarkMode] = useState(false);
 
   function toggleDarkMode() {
     setDarkMode((prevDarkMode) => !prevDarkMode);
