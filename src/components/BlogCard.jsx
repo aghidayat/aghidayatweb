@@ -1,16 +1,20 @@
-const BlogCard = ({ title, description, link }) => {
+const BlogCard = ({ title, description, link, imageUrl }) => {
   return (
-    <div className="border p-6 rounded-lg shadow-md bg-white dark:bg-gray-800">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block w-full border p-6 rounded-lg shadow-md bg-white dark:bg-gray-800 hover:shadow-lg transition duration-500 ease-in-out">
+      {imageUrl && (
+        <img
+          src={imageUrl}
+          alt={title}
+          className="w-full h-48 object-cover rounded-t-lg mb-4"
+        />
+      )}
       <h3 className="text-xl font-bold">{title}</h3>
-      <p className="text-gray-700 dark:text-gray-300 mt-2">{description}</p>
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 dark:text-blue-400 underline mt-4 block">
-        Read More
-      </a>
-    </div>
+      <p className="text-gray-700 dark:text-gray-300 mt-2">{description}...</p>
+    </a>
   );
 };
 

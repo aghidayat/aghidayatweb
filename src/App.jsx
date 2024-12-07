@@ -3,6 +3,7 @@ import ExperienceCard from "./components/ExperienceCard";
 import PortfolioCard from "./components/PortfolioCard";
 import BlogCard from "./components/BlogCard";
 import TestimonialCard from "./components/TestimonialCard";
+import Pagination from "./components/Pagination";
 
 function App() {
   const translations = {
@@ -148,18 +149,24 @@ function App() {
       description:
         "As software applications grow, system designers need to plan for scalability to handle increasing users and data",
       link: "https://medium.com/@gargg/designing-scalable-systems-a-technical-guide-c15f0c700c23",
+      imageUrl:
+        "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*G4GUpnrr3ElOXnVhAqn5Ig.png",
     },
     {
       title: "High-Level System Architecture of Booking.com",
       description:
         "Serving millions of users worldwide, Booking.com has a dynamic system architecture to meet ever-changing customer expectations and integrate technological innovations",
       link: "https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94",
+      imageUrl:
+        "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*jlMN0nRazHLOTl7x__K5kg.png",
     },
     {
       title: "Top 10 Microservices Design Patterns you should know",
       description:
         "A microservice is a small, independently deployable component of a larger application that focuses on a specific functionality",
       link: "https://medium.com/@sylvain.tiset/top-10-microservices-design-patterns-you-should-know-1bac6a7d6218",
+      imageUrl:
+        "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*X19whxEh-bn79rj7",
     },
   ];
 
@@ -241,8 +248,8 @@ function App() {
       <section className="py-12 px-4 sm:px-6 border-b">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">📂 My Projects</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
+          <Pagination items={projects} itemsPerPage={3}>
+            {(project, index) => (
               <PortfolioCard
                 key={index}
                 title={project[language].title}
@@ -250,8 +257,8 @@ function App() {
                 technologies={project[language].technologies}
                 link={project[language].link}
               />
-            ))}
-          </div>
+            )}
+          </Pagination>
         </div>
       </section>
 
@@ -275,16 +282,17 @@ function App() {
       <section className="py-12 px-4 sm:px-6 border-b">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">📝 Blog & Insights</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {blogs.map((blog, index) => (
+          <Pagination items={blogs} itemsPerPage={3}>
+            {(blog, index) => (
               <BlogCard
                 key={index}
                 title={blog.title}
                 description={blog.description}
                 link={blog.link}
+                imageUrl={blog.imageUrl}
               />
-            ))}
-          </div>
+            )}
+          </Pagination>
         </div>
       </section>
 
@@ -292,16 +300,16 @@ function App() {
       <section className="py-12 px-4 sm:px-6 border-b">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">🌟 Testimonials</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {testimonials.map((testimonial, index) => (
+          <Pagination items={testimonials} itemsPerPage={3}>
+            {(testimonial, index) => (
               <TestimonialCard
                 key={index}
                 description={testimonial.description}
                 name={testimonial.name}
                 from={testimonial.from}
               />
-            ))}
-          </div>
+            )}
+          </Pagination>
         </div>
       </section>
 
