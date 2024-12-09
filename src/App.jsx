@@ -167,6 +167,22 @@ function App() {
     },
     {
       ID: {
+        title: "Interpreters.travel",
+        description:
+          "Professional interpreters at exhibitions, conferences, negotiations",
+        technologies: ["React JS"],
+        link: "https://www.interpreters.travel/en/",
+      },
+      EN: {
+        title: "Interpreters.travel",
+        description:
+          "Professional interpreters at exhibitions, conferences, negotiations",
+        technologies: ["React JS"],
+        link: "https://www.interpreters.travel/en/",
+      },
+    },
+    {
+      ID: {
         title: "YoBerbagi.id",
         description:
           "Sebuah platform Sistem Manajemen Pembelajaran (LMS) yang dikustomisasi untuk memfasilitasi pembelajaran online dan pelatihan, menawarkan antarmuka yang user-friendly, manajemen kursus, dan fitur interaktif.",
@@ -201,6 +217,46 @@ function App() {
         link: "http://agroobot.co.id/",
         imageUrl:
           "https://agroobot.co.id/wp-content/uploads/2023/09/IMG_1218.png",
+      },
+    },
+    {
+      ID: {
+        title: "Futsaloka",
+        description:
+          "platform manajemen pemesanan olahraga dan komunitas olahraga yang komprehensif yang memungkinkan pengguna untuk memesan dan mengelola fasilitas olahraga, melacak ketersediaan, dan menghasilkan laporan rinci. Platform ini juga memungkinkan pengelolaan jadwal fasilitas, ketersediaan, dan harga dengan mulus, sehingga pengalaman pemesanan menjadi lebih efisien.",
+        technologies: ["Codeigniter", "React Native"],
+        link: "#",
+        imageUrl:
+          "https://media.licdn.com/dms/image/v2/C510BAQFXEkIE88w5VA/company-logo_200_200/company-logo_200_200/0/1630615396060?e=1741824000&v=beta&t=_QeQ71bkoEolyb8qhRJE0gs8I3BtnSo-p8ABJAE5uXI",
+      },
+      EN: {
+        title: "Futsaloka",
+        description:
+          "a comprehensive Sport Booking Management and Sport Community Platform that enables users to effortlessly book and manage sports facilities, track availability, and generate detailed reports. The platform also allows for seamless management of facility schedules, availability, and pricing, ensuring a smooth and efficient booking experience.",
+        technologies: ["Codeigniter", "React Native"],
+        link: "#",
+        imageUrl:
+          "https://media.licdn.com/dms/image/v2/C510BAQFXEkIE88w5VA/company-logo_200_200/company-logo_200_200/0/1630615396060?e=1741824000&v=beta&t=_QeQ71bkoEolyb8qhRJE0gs8I3BtnSo-p8ABJAE5uXI",
+      },
+    },
+    {
+      ID: {
+        title: "E-Procurement YKAN",
+        description:
+          "Sistem E-Procurement YKAN: Platform pengadaan digital yang menyederhanakan proses pembelian untuk transaksi yang efisien dan transparan.",
+        technologies: ["Codeigniter"],
+        link: "https://procurement.ykan.or.id/",
+        imageUrl:
+          "https://www.ykan.or.id/content/dam/tnc/nature/en/logos/ykan/Logo_black.png",
+      },
+      EN: {
+        title: "E-Procurement YKAN",
+        description:
+          "A digital procurement platform streamlining purchasing processes for efficient and transparent transactions.",
+        technologies: ["Codeigniter"],
+        link: "https://procurement.ykan.or.id/",
+        imageUrl:
+          "https://www.ykan.or.id/content/dam/tnc/nature/en/logos/ykan/Logo_black.png",
       },
     },
   ];
@@ -306,7 +362,7 @@ function App() {
       {/* Experiences Section */}
       <section className="py-12 px-4 sm:px-6 border-b">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-6">💼 My Experiences</h2>
+          <h2 className="text-3xl font-bold mb-6">💼 Experiences</h2>
           <div className="grid gap-6">
             {experiences.map((experience, index) => (
               <ExperienceCard
@@ -323,7 +379,7 @@ function App() {
       {/* Portfolio Section */}
       <section className="py-12 px-4 sm:px-6 border-b">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-6">📂 My Projects</h2>
+          <h2 className="text-3xl font-bold mb-6">📂 Projects</h2>
           <Pagination items={projects} itemsPerPage={3}>
             {(project, index) => (
               <PortfolioCard
