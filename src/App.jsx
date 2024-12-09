@@ -79,13 +79,13 @@ function App() {
     {
       ID: {
         years: "2015 - 2017",
-        title: "PT PANEN MAYA DIGITAL | Pengembang Frontend",
+        title: "PT. Panenmaya Digital Consultant | Pengembang Frontend",
         description:
           "Saya bekerja sebagai pengembang frontend, mengimplementasikan desain web yang responsif pada setiap platform, mengintegrasikan API, dan bekerja sama dengan tim backend untuk mengintegrasikan data. Teknologi yang digunakan: HTML, CSS, JavaScript, PHP.",
       },
       EN: {
         years: "2015 - 2017",
-        title: "PT PANEN MAYA DIGITAL | Frontend Developer",
+        title: "PT. Panenmaya Digital Consultant | Frontend Developer",
         description:
           "I worked as a frontend developer, implementing responsive web design on every platform, integrating APIs, and collaborating with the backend team for data integration. Technologies utilized: HTML, CSS, JavaScript, PHP.",
       },
@@ -100,6 +100,7 @@ function App() {
           "SampApp adalah platform e-learning gamifikasi bagi pengguna Indonesia untuk memahami cara mengonsumsi dan membuang barang plastik serta tanggung jawab pengemasan.",
         technologies: ["React Native", "Android", "Ios"],
         link: "https://vel.earth/sampapp",
+        imageUrl: "https://vel.earth/landing/images/webp/hero-banner.webp",
       },
       EN: {
         title: "SampApp",
@@ -107,6 +108,7 @@ function App() {
           "SampApp is a gamified e-learning platform for Indonesian users to understand how to consume and dispose of plastic goods and packaging responsibility",
         technologies: ["React Native", "Android", "Ios"],
         link: "https://vel.earth/sampapp",
+        imageUrl: "https://vel.earth/landing/images/webp/hero-banner.webp",
       },
     },
     {
@@ -116,6 +118,7 @@ function App() {
           "RECO memberdayakan para pemulung informal di seluruh Indonesia dan mempekerjakan mereka di RECO MRF dan Pabrik dengan Upah yang Adil, Lingkungan Kerja yang Aman dan Peluang untuk meningkatkan kompetensi mereka dan bekerja di posisi manajemen.",
         technologies: ["React Native", "Android", "Ios"],
         link: "https://recovered.id/",
+        imageUrl: "https://recovered.id/staging/images/webp/ipst-toisapu.webp",
       },
       EN: {
         title: "RECO",
@@ -123,6 +126,7 @@ function App() {
           "RECO empowering informal wastepickers around Indonesia and employ them in RECO MRFs and Factories with Fair Wages, Safe Work Environment and Chances to increase their competencies and work in management position.",
         technologies: ["React Native", "Android", "Ios"],
         link: "https://recovered.id/",
+        imageUrl: "https://recovered.id/staging/images/webp/ipst-toisapu.webp",
       },
     },
     {
@@ -132,6 +136,7 @@ function App() {
           "Mengembangkan aplikasi mobile untuk membaca dan memahami Al-Quran lebih menyenangkan.",
         technologies: ["Javascript", "HTML"],
         link: "https://aghidayat-quran.vercel.app/",
+        imageUrl: "https://aghidayat-quran.vercel.app/images/QK_001.webp",
       },
       EN: {
         title: "Read Quran App",
@@ -139,6 +144,39 @@ function App() {
           "Developed a mobile app for reading and understanding the Quran in a more engaging way.",
         technologies: ["Javascript", "HTML"],
         link: "https://aghidayat-quran.vercel.app/",
+        imageUrl: "https://aghidayat-quran.vercel.app/images/QK_001.webp",
+      },
+    },
+    {
+      ID: {
+        title: "Allthinc",
+        description:
+          "Creating Design has never been easier!. With ai (allthinc intelligence) you can start creating your own design and start selling with your design, Try Now",
+        technologies: ["React JS"],
+        link: "https://allthinc.com/",
+      },
+      EN: {
+        title: "Allthinc",
+        description:
+          "Creating Design has never been easier!. With ai (allthinc intelligence) you can start creating your own design and start selling with your design, Try Now",
+        technologies: ["React JS"],
+        link: "https://allthinc.com/",
+      },
+    },
+    {
+      ID: {
+        title: "YoBerbagi.id",
+        description: "Custom LMS Application",
+        technologies: ["Laravel"],
+        link: "https://yoberbagi.id/",
+        imageUrl: "https://yoberbagi.id/storage/COMPANY/ASSETS/LOGO/logo.png",
+      },
+      EN: {
+        title: "YoBerbagi.id",
+        description: "Custom LMS Application",
+        technologies: ["Laravel"],
+        link: "https://yoberbagi.id/",
+        imageUrl: "https://yoberbagi.id/storage/COMPANY/ASSETS/LOGO/logo.png",
       },
     },
   ];
@@ -171,6 +209,12 @@ function App() {
   ];
 
   const testimonials = [
+    {
+      description:
+        "Adi selalu menyelesaikan pekerjaan dengan cepat dan hasilnya pun selalu memuaskan. Komunikasinya juga sangat bagus, selalu responsif, dan memahami kebutuhan dengan detail. Sangat senang bisa bekerja sama dengannya!",
+      name: "Ridhan Thirafi Abadi",
+      from: "CEO & Founder at Sirkel.id",
+    },
     {
       description: "Excellent specialist, Great Client, Should be 5 stars",
       name: "Dmitry Kochkurov",
@@ -256,6 +300,7 @@ function App() {
                 description={project[language].description}
                 technologies={project[language].technologies}
                 link={project[language].link}
+                imageUrl={project[language].imageUrl}
               />
             )}
           </Pagination>

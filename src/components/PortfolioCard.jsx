@@ -1,6 +1,19 @@
-const PortfolioCard = ({ title, description, technologies, link }) => {
+const PortfolioCard = ({
+  title,
+  description,
+  technologies,
+  link,
+  imageUrl = null,
+}) => {
   return (
     <div className="border rounded-lg p-6 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-shadow">
+      {imageUrl && (
+        <img
+          src={imageUrl}
+          alt={title}
+          className="w-full h-48 object-cover rounded-t-lg mb-4"
+        />
+      )}
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-700 dark:text-gray-300 mb-4">{description}</p>
       <ul className="flex flex-wrap gap-2 mb-4">
