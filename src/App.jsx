@@ -151,9 +151,10 @@ function App() {
       ID: {
         title: "Allthinc",
         description:
-          "Creating Design has never been easier!. With ai (allthinc intelligence) you can start creating your own design and start selling with your design, Try Now",
+          "Membuat desain tidak pernah semudah ini!. Dengan AI (Kecerdasan Allthinc) Anda dapat mulai membuat desain Anda sendiri dan mulai menjual dengan desain Anda, Coba Sekarang",
         technologies: ["React JS"],
         link: "https://allthinc.com/",
+        imageUrl: "https://allthinc.com/assets/logo-DvBe2_ak.png",
       },
       EN: {
         title: "Allthinc",
@@ -161,27 +162,58 @@ function App() {
           "Creating Design has never been easier!. With ai (allthinc intelligence) you can start creating your own design and start selling with your design, Try Now",
         technologies: ["React JS"],
         link: "https://allthinc.com/",
+        imageUrl: "https://allthinc.com/assets/logo-DvBe2_ak.png",
       },
     },
     {
       ID: {
         title: "YoBerbagi.id",
-        description: "Custom LMS Application",
+        description:
+          "Sebuah platform Sistem Manajemen Pembelajaran (LMS) yang dikustomisasi untuk memfasilitasi pembelajaran online dan pelatihan, menawarkan antarmuka yang user-friendly, manajemen kursus, dan fitur interaktif.",
         technologies: ["Laravel"],
         link: "https://yoberbagi.id/",
         imageUrl: "https://yoberbagi.id/storage/COMPANY/ASSETS/LOGO/logo.png",
       },
       EN: {
         title: "YoBerbagi.id",
-        description: "Custom LMS Application",
+        description:
+          "A customized Learning Management System (LMS) platform designed to facilitate online learning and training, offering a user-friendly interface, course management, and interactive features.",
         technologies: ["Laravel"],
         link: "https://yoberbagi.id/",
         imageUrl: "https://yoberbagi.id/storage/COMPANY/ASSETS/LOGO/logo.png",
       },
     },
+    {
+      ID: {
+        title: "AGROOBOT",
+        description:
+          "AGROOBOT adalah Perusahaan Berbasis Teknologi yang berfokus pada pengembangan platform dengan berbagai layanan untuk memberdayakan pertanian dan meningkatkan kesejahteraan petani dengan sistem pertanian berkelanjutan",
+        technologies: ["React Js", "Typescript", "Node JS"],
+        link: "http://agroobot.co.id/",
+        imageUrl:
+          "https://agroobot.co.id/wp-content/uploads/2023/09/IMG_1218.png",
+      },
+      EN: {
+        title: "AGROOBOT",
+        description:
+          "AGROOBOT is a Technology-Based Company focused on developing a platform with various services to empower agriculture and improve farmers' welfare through sustainable agriculture systems",
+        technologies: ["React Js", "Typescript", "Node JS"],
+        link: "http://agroobot.co.id/",
+        imageUrl:
+          "https://agroobot.co.id/wp-content/uploads/2023/09/IMG_1218.png",
+      },
+    },
   ];
 
   const blogs = [
+    {
+      title: "A Beginner’s Guide to System Design",
+      description:
+        "It was December of last year when the thought first occurred to me. I had been working at Google for nearly 3.5 years and it was high time for me to try out new opportunities and learn from them",
+      link: "https://medium.com/@sentalkssane/a-beginners-guide-to-system-design-76d64689788b",
+      imageUrl:
+        "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*W7FPF0ywvPDMSEXr",
+    },
     {
       title: "Designing Scalable Systems: A Technical Guide",
       description:
@@ -191,20 +223,20 @@ function App() {
         "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*G4GUpnrr3ElOXnVhAqn5Ig.png",
     },
     {
-      title: "High-Level System Architecture of Booking.com",
-      description:
-        "Serving millions of users worldwide, Booking.com has a dynamic system architecture to meet ever-changing customer expectations and integrate technological innovations",
-      link: "https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94",
-      imageUrl:
-        "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*jlMN0nRazHLOTl7x__K5kg.png",
-    },
-    {
       title: "Top 10 Microservices Design Patterns you should know",
       description:
         "A microservice is a small, independently deployable component of a larger application that focuses on a specific functionality",
       link: "https://medium.com/@sylvain.tiset/top-10-microservices-design-patterns-you-should-know-1bac6a7d6218",
       imageUrl:
         "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*X19whxEh-bn79rj7",
+    },
+    {
+      title: "High-Level System Architecture of Booking.com",
+      description:
+        "Serving millions of users worldwide, Booking.com has a dynamic system architecture to meet ever-changing customer expectations and integrate technological innovations",
+      link: "https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94",
+      imageUrl:
+        "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*jlMN0nRazHLOTl7x__K5kg.png",
     },
   ];
 
