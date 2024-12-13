@@ -4,11 +4,13 @@ import PortfolioCard from "./components/PortfolioCard";
 import BlogCard from "./components/BlogCard";
 import TestimonialCard from "./components/TestimonialCard";
 import Pagination from "./components/Pagination";
+import FileCV from "./assets/Resume-Adi-Gunawan-Hidayat-2024.pdf";
 
 function App() {
   const translations = {
     EN: {
       title: "Adi Gunawan Hidayat",
+      subtitle: "Software Engineer",
       description:
         "A passionate Fullstack Developer with over 6 years of experience creating powerful web applications. Skilled in leveraging modern technologies like Node.js, Express.js, React.js, and Tailwind, I deliver solutions that combine efficiency with elegance. My expertise spans Progressive Web Apps (PWAs), Git version control, Docker, and AWS cloud services. I thrive on crafting exceptional user experiences and writing clean, high-quality code that makes an impact.",
       contact: "🤙 Let's Connect!",
@@ -20,6 +22,7 @@ function App() {
     },
     ID: {
       title: "Adi Gunawan Hidayat",
+      subtitle: "Pengembang Perangkat Lunak",
       description:
         "Seorang Pengembang Fullstack yang bersemangat dengan lebih dari 6 tahun pengalaman menciptakan aplikasi web yang andal. Terampil menggunakan teknologi modern seperti Node.js, Express.js, React.js, dan Tailwind untuk menghasilkan solusi yang efisien dan elegan. Keahlian saya meliputi Progressive Web Apps (PWAs), kontrol versi Git, Docker, dan layanan cloud AWS. Saya menikmati menciptakan pengalaman pengguna yang luar biasa dan menulis kode berkualitas tinggi yang memberikan dampak.",
       contact: "🤙 Hubungi Saya!",
@@ -35,29 +38,33 @@ function App() {
     {
       ID: {
         years: "2023 - Sekarang",
-        title: "PT Ihsan Solusi | Pengembang Aplikasi Fullstack",
+        title: "PT. Ihsan Solusi Informatika | Pengembang Aplikasi Fullstack",
         description:
-          "Sebagai pengembang aplikasi fullstack di PT Ihsan Solusi, saya bertanggung jawab untuk merancang dan mengembangkan sistem perbankan syariah yang komprehensif yang memenuhi prinsip-prinsip keuangan Islam. Menggunakan Python untuk backend dan React.js untuk frontend, saya telah membangun sistem yang kokoh dan skalabel yang memungkinkan operasi perbankan yang efisien dan aman.",
+          "Sebagai pengembang aplikasi fullstack di PT. Ihsan Solusi Informatika, saya bertanggung jawab untuk merancang dan mengembangkan sistem perbankan syariah yang komprehensif yang memenuhi prinsip-prinsip keuangan Islam. Menggunakan Python untuk backend dan React.js untuk frontend, saya telah membangun sistem yang kokoh dan skalabel yang memungkinkan operasi perbankan yang efisien dan aman.",
+        link: "https://ihsansolusi.co.id/",
       },
       EN: {
         years: "2023 - Present",
-        title: "PT Ihsan Solusi | Fullstack Application Developer",
+        title: "PT. Ihsan Solusi Informatika | Fullstack Application Developer",
         description:
-          "As a fullstack application developer at PT Ihsan Solusi, I am responsible for designing and developing a comprehensive sharia banking system that adheres to Islamic financial principles. Utilizing Python for the backend and React.js for the frontend, I have built a robust and scalable system that enables efficient and secure banking operations.",
+          "As a fullstack application developer at PT. Ihsan Solusi Informatika, I am responsible for designing and developing a comprehensive sharia banking system that adheres to Islamic financial principles. Utilizing Python for the backend and React.js for the frontend, I have built a robust and scalable system that enables efficient and secure banking operations.",
+        link: "https://ihsansolusi.co.id/",
       },
     },
     {
       ID: {
         years: "2020 - 2023",
-        title: "PT SIRKEL KREASI NUSANTARA | Pengembang Aplikasi Fullstack",
+        title: "PT Sirkel Kreasi Nusantara | Pengembang Aplikasi Fullstack",
         description:
           "Saya bekerja sebagai pengembang aplikasi fullstack, menggunakan React.js, Next.js, Node.js, dan Tailwind untuk mengembangkan aplikasi web modern. Tanggung jawab saya mencakup mendesain antarmuka pengguna, mendesain database, mengoptimalkan kinerja aplikasi, dan melakukan pengujian untuk memastikan kinerja yang optimal dan pengalaman pengguna yang memuaskan. Saya juga selalu memperbarui pengetahuan saya dengan teknologi terkini untuk menciptakan solusi inovatif.",
+        link: "#http://sirkel.id/",
       },
       EN: {
         years: "2020 - 2023",
-        title: "PT SIRKEL KREASI NUSANTARA | Fullstack Application Developer",
+        title: "PT Sirkel Kreasi Nusantara | Fullstack Application Developer",
         description:
           "I worked as a fullstack application developer, utilizing React.js, Next.js, Node.js, and Tailwind to develop modern web applications. My responsibilities included designing user interfaces, designing databases, optimizing application performance, and conducting tests to ensure optimal performance and a satisfying user experience. I also stayed up-to-date with the latest technology to create innovative solutions.",
+        link: "#http://sirkel.id/",
       },
     },
     {
@@ -67,6 +74,7 @@ function App() {
           "PT DATAQUEST LEVERAGE INDONESIA | Pengembang Aplikasi Fullstack",
         description:
           "Saya bekerja sebagai pengembang aplikasi fullstack, menggunakan Laravel dan Bootstrap untuk mengembangkan aplikasi web modern untuk Sistem Manajemen Pembelajaran. Tanggung jawab saya mencakup mendesain database, mengoptimalkan kinerja aplikasi, dan memastikan kinerja yang optimal serta pengalaman pengguna yang memuaskan.",
+        link: "https://dataquest.co.id/",
       },
       EN: {
         years: "2017 - 2020",
@@ -74,6 +82,7 @@ function App() {
           "PT DATAQUEST LEVERAGE INDONESIA | Fullstack Application Developer",
         description:
           "I worked as a fullstack application developer, utilizing Laravel and Bootstrap to develop modern web applications for Learning Management System. My responsibilities included designing databases, optimizing application performance, and ensuring optimal performance and a satisfying user experience.",
+        link: "https://dataquest.co.id/",
       },
     },
     {
@@ -82,12 +91,14 @@ function App() {
         title: "PT. Panenmaya Digital Consultant | Pengembang Frontend",
         description:
           "Saya bekerja sebagai pengembang frontend, mengimplementasikan desain web yang responsif pada setiap platform, mengintegrasikan API, dan bekerja sama dengan tim backend untuk mengintegrasikan data. Teknologi yang digunakan: HTML, CSS, JavaScript, PHP.",
+        link: "https://panenmaya.com/",
       },
       EN: {
         years: "2015 - 2017",
         title: "PT. Panenmaya Digital Consultant | Frontend Developer",
         description:
           "I worked as a frontend developer, implementing responsive web design on every platform, integrating APIs, and collaborating with the backend team for data integration. Technologies utilized: HTML, CSS, JavaScript, PHP.",
+        link: "https://panenmaya.com/",
       },
     },
   ];
@@ -339,8 +350,17 @@ function App() {
             <h1 className="text-3xl font-bold">
               {translations[language].title}
             </h1>
-            <h2 className="text-xl mt-2">Software Engineer</h2>
+            <h2 className="text-xl mt-2">{translations[language].subtitle}</h2>
             <p className="mt-4">{translations[language].description}</p>
+            <div className="mt-5">
+              <a
+                href={FileCV}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 hover:shadow-md transition-shadow rounded-md border border-gray-900 dark:border-gray-500 bg-transparent">
+                Download CV
+              </a>
+            </div>
           </div>
           <div className="flex items-center gap-4 self-start">
             <select
@@ -370,6 +390,7 @@ function App() {
                 years={experience[language].years}
                 title={experience[language].title}
                 description={experience[language].description}
+                link={experience[language].link}
               />
             ))}
           </div>
