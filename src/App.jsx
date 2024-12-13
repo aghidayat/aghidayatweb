@@ -236,7 +236,6 @@ function App() {
         description:
           "platform manajemen pemesanan olahraga dan komunitas olahraga yang komprehensif yang memungkinkan pengguna untuk memesan dan mengelola fasilitas olahraga, melacak ketersediaan, dan menghasilkan laporan rinci. Platform ini juga memungkinkan pengelolaan jadwal fasilitas, ketersediaan, dan harga dengan mulus, sehingga pengalaman pemesanan menjadi lebih efisien.",
         technologies: ["Codeigniter", "React Native"],
-        link: "#",
         imageUrl:
           "https://media.licdn.com/dms/image/v2/C510BAQFXEkIE88w5VA/company-logo_200_200/company-logo_200_200/0/1630615396060?e=1741824000&v=beta&t=_QeQ71bkoEolyb8qhRJE0gs8I3BtnSo-p8ABJAE5uXI",
       },
@@ -245,7 +244,6 @@ function App() {
         description:
           "a comprehensive Sport Booking Management and Sport Community Platform that enables users to effortlessly book and manage sports facilities, track availability, and generate detailed reports. The platform also allows for seamless management of facility schedules, availability, and pricing, ensuring a smooth and efficient booking experience.",
         technologies: ["Codeigniter", "React Native"],
-        link: "#",
         imageUrl:
           "https://media.licdn.com/dms/image/v2/C510BAQFXEkIE88w5VA/company-logo_200_200/company-logo_200_200/0/1630615396060?e=1741824000&v=beta&t=_QeQ71bkoEolyb8qhRJE0gs8I3BtnSo-p8ABJAE5uXI",
       },
@@ -268,6 +266,24 @@ function App() {
         link: "https://procurement.ykan.or.id/",
         imageUrl:
           "https://www.ykan.or.id/content/dam/tnc/nature/en/logos/ykan/Logo_black.png",
+      },
+    },
+    {
+      ID: {
+        title: "Chachamilktea Member-App",
+        description:
+          "Application for managing members to get information about member like point, name, address and etc",
+        technologies: ["Laravel"],
+        imageUrl:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtlQFYRb3U87kkISClG7WjrLRmYepgayAAg&s",
+      },
+      EN: {
+        title: "Chachamilktea Member-App",
+        description:
+          "Application for managing members to get information about member like point, name, address and etc",
+        technologies: ["Laravel"],
+        imageUrl:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtlQFYRb3U87kkISClG7WjrLRmYepgayAAg&s",
       },
     },
   ];
