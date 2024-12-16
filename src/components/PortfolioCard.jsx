@@ -6,7 +6,7 @@ const PortfolioCard = ({
   imageUrl = null,
 }) => {
   return (
-    <div className="border rounded-lg p-6 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-shadow">
+    <div className="border dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-shadow">
       {imageUrl && (
         <img
           src={imageUrl}

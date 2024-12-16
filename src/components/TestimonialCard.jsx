@@ -1,6 +1,6 @@
 const TestimonialCard = ({ description, name, from }) => {
   return (
-    <div className="border p-6 rounded-lg shadow-md bg-white dark:bg-gray-800">
+    <div className="border dark:border-gray-700 p-6 rounded-lg shadow-md bg-white dark:bg-gray-800">
       <p className="text-gray-700 dark:text-gray-300">{description}</p>
       <div className="flex mt-3 text-sm">⭐️⭐️⭐️⭐️⭐️</div>
       <h3 className="mt-4 font-bold">{name}</h3>

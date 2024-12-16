@@ -4,7 +4,7 @@ const BlogCard = ({ title, description, link, imageUrl }) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="block w-full border p-6 rounded-lg shadow-md bg-white dark:bg-gray-800 hover:shadow-lg transition duration-500 ease-in-out">
+      className="block w-full border dark:border-gray-700 p-6 rounded-lg shadow-md bg-white dark:bg-gray-800 hover:shadow-lg transition duration-500 ease-in-out">
       {imageUrl && (
         <img
           src={imageUrl}

@@ -296,8 +296,8 @@ function App() {
     },
     {
       description: {
-        ID: "Bekerjasama dengan Sdr. Adi Gunawan Hidayat sangat menyenangkan, Bekerja dengan mengutamakan Profesional, Sangat terbuka dengan ide dan masukan, Sabar dalam menerima Revisi, Serta bisa Improvisasi untuk memaksimalkan Aplikasi",
-        EN: "Working with Mr. Adi Gunawan Hidayat is very enjoyable. He works with a focus on professionalism, is very open to ideas and feedback, patient with revisions, and capable of improvising to maximize the application.",
+        ID: "Bekerjasama dengan Adi Gunawan Hidayat sangat menyenangkan, Bekerja dengan mengutamakan Profesional, Sangat terbuka dengan ide dan masukan, Sabar dalam menerima Revisi, Serta bisa Improvisasi untuk memaksimalkan Aplikasi",
+        EN: "Working with Adi Gunawan Hidayat is very enjoyable. He works with a focus on professionalism, is very open to ideas and feedback, patient with revisions, and capable of improvising to maximize the application.",
       },
       name: "Riyan Padhini",
       from: {
@@ -324,7 +324,7 @@ function App() {
       className={`min-h-screen ${
         darkMode ? "dark" : "light"
       } transition-colors`}>
-      <header className="border-b py-6 px-4 sm:px-6">
+      <header className="border-b dark:border-gray-800 py-6 px-4 sm:px-6">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-6 md:mb-0">
             <h1 className="text-3xl font-bold">
@@ -337,7 +337,7 @@ function App() {
                 href={FileCV}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 hover:shadow-md transition-shadow rounded-md border border-gray-900 dark:border-gray-500 bg-transparent">
+                className="p-2 hover:shadow-md transition-shadow rounded-md border dark:border-gray-500 bg-transparent">
                 {translations[language].download_cv}
               </a>
             </div>
@@ -353,14 +353,14 @@ function App() {
             <button
               onClick={toggleDarkMode}
               className="h-10 w-10 flex items-center justify-center rounded-md border dark:border-gray-700 bg-transparent text-xl">
-              {darkMode ? "🌙" : "🌞"}
+              {darkMode ? "🌙" : "💡"}
             </button>
           </div>
         </div>
       </header>
 
       {/* Experiences Section */}
-      <section className="py-12 px-4 sm:px-6 border-b">
+      <section className="py-12 px-4 sm:px-6 border-b dark:border-gray-800">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">
             💼 {translations[language].experiences}
@@ -381,7 +381,7 @@ function App() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-12 px-4 sm:px-6 border-b">
+      <section className="py-12 px-4 sm:px-6 border-b dark:border-gray-800">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">📂 Projects</h2>
           <Pagination items={projects} itemsPerPage={3}>
@@ -400,7 +400,7 @@ function App() {
       </section>
 
       {/* Certifications & Awards Section */}
-      <section className="py-12 px-4 sm:px-6 border-b">
+      <section className="py-12 px-4 sm:px-6 border-b dark:border-gray-800">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">
             🏆 Certifications & Awards
@@ -416,7 +416,7 @@ function App() {
       </section>
 
       {/* Blog/Insights Section */}
-      <section className="py-12 px-4 sm:px-6 border-b">
+      <section className="py-12 px-4 sm:px-6 border-b dark:border-gray-800">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">📝 Blog & Insights</h2>
           <Pagination items={blogs} itemsPerPage={3}>
@@ -434,7 +434,7 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-12 px-4 sm:px-6 border-b">
+      <section className="py-12 px-4 sm:px-6 border-b dark:border-gray-800">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">🌟 Testimonials</h2>
           <Pagination items={testimonials} itemsPerPage={3}>
@@ -451,7 +451,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <footer className="py-12 bg-gray-50 dark:bg-gray-950 px-4 sm:px-6">
+      <footer className="py-12 px-4 sm:px-6">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
           <h2 className="text-2xl font-bold mb-6 md:mb-0">
             {translations[language].contact}
@@ -471,13 +471,13 @@ function App() {
                 className="underline">
                 {translations[language].linkedin}
               </a>
-              <a
+              {/* <a
                 href="https://wa.me/6289627302553"
                 target="_blank"
                 rel="noreferrer"
                 className="underline">
                 {translations[language].whatsapp}
-              </a>
+              </a> */}
               <a
                 href="https://www.youtube.com/@aghidayat"
                 target="_blank"
