@@ -15,7 +15,11 @@ const PortfolioCard = ({
         />
       )}
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-700 dark:text-gray-300 mb-4">{description}</p>
+      <p className="text-gray-700 dark:text-gray-300 mb-4">
+        {description.length > 200
+          ? `${description.substring(0, 200)}...`
+          : description}
+      </p>
       <ul className="flex flex-wrap gap-2 mb-4">
         {technologies.map((tech, index) => (
           <li

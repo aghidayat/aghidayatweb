@@ -19,6 +19,8 @@ function App() {
       whatsapp: "WhatsApp",
       contact_me: "I’d love to hear from you! Feel free to reach out:",
       youtube: "Youtube",
+      upwork: "Upwork",
+      github: "Github",
       experiences: "Experiences",
       download_cv: "Download CV",
     },
@@ -33,6 +35,8 @@ function App() {
       whatsapp: "WhatsApp",
       contact_me: "Saya akan senang mendengar dari Anda! Silakan hubungi:",
       youtube: "Youtube",
+      upwork: "Upwork",
+      github: "Github",
       experiences: "Pengalaman Bekerja",
       download_cv: "Unduh CV",
     },
@@ -54,7 +58,7 @@ function App() {
       },
       link: "https://ihsansolusi.co.id/",
       imageUrl:
-        "https://media.licdn.com/dms/image/v2/D560BAQGRO8-FXsQ0wQ/company-logo_200_200/company-logo_200_200/0/1688541140181/ihsan_solusi_informatika_logo?e=1742428800&v=beta&t=G5j2gf3EcpouvPznODRVDapNWvEBLRKOQq7jmKSqzSE",
+        "https://media.licdn.com/dms/image/v2/D560BAQGRO8-FXsQ0wQ/company-logo_200_200/company-logo_200_200/0/1688541140181/ihsan_solusi_informatika_logo?e=1750291200&v=beta&t=w8gTv-JwthMPeFYXvCLjwKdkc7pAG7RZHpEd5nUCfsI",
     },
     {
       years: {
@@ -71,7 +75,7 @@ function App() {
       },
       link: "http://sirkel.id/",
       imageUrl:
-        "https://media.licdn.com/dms/image/v2/C510BAQE4aBRNpVLN9w/company-logo_200_200/company-logo_200_200/0/1630634639346/sirkeleducation_logo?e=1742428800&v=beta&t=zvJ8b6BAs6vpzOhxKYqdIY9n75n2fOLpNOyG5RRQGqA",
+        "https://media.licdn.com/dms/image/v2/C510BAQE4aBRNpVLN9w/company-logo_100_100/company-logo_100_100/0/1630634639346/sirkeleducation_logo?e=1750291200&v=beta&t=vWw060kQ78Jthw76nkCeGFXXrayls9eEHC-L7J4cLqk",
     },
     {
       years: {
@@ -88,7 +92,7 @@ function App() {
       },
       link: "https://dataquest.co.id/",
       imageUrl:
-        "https://media.licdn.com/dms/image/v2/C4D0BAQHwX5mTuFnDIQ/company-logo_200_200/company-logo_200_200/0/1631320215901?e=1742428800&v=beta&t=J88hJUrj_Rv21-fZU0CmtX5LbL7CVobw-mr6NhOP2vY",
+        "https://media.licdn.com/dms/image/v2/C4D0BAQHwX5mTuFnDIQ/company-logo_100_100/company-logo_100_100/0/1631320215901?e=1750291200&v=beta&t=5LszdD8gKCnffq3V0r5rJEwPqiTLmXpHeXXrAKjvTUU",
     },
     {
       years: {
@@ -105,7 +109,7 @@ function App() {
       },
       link: "https://panenmaya.com/",
       imageUrl:
-        "https://media.licdn.com/dms/image/v2/C4D0BAQEIu5c4XX8CAg/company-logo_200_200/company-logo_200_200/0/1631335441236?e=1742428800&v=beta&t=N6FtnQwMfPPj3AdoZ-8lo4xDN5HnXCjhoLB9XNiStzc",
+        "https://media.licdn.com/dms/image/v2/C4D0BAQEIu5c4XX8CAg/company-logo_100_100/company-logo_100_100/0/1631335441236?e=1750291200&v=beta&t=8G95Z2be-0wCSvfGdvVnr6rGRSxkPKq_o9a1AyM8c9Y",
     },
   ];
 
@@ -147,7 +151,8 @@ function App() {
       },
       technologies: ["Javascript", "HTML"],
       link: "https://aghidayat-quran.vercel.app/",
-      imageUrl: "https://aghidayat-quran.vercel.app/images/QK_001.webp",
+      imageUrl:
+        "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/ec675f17-d448-40f5-a91a-9c5607a44512",
     },
     {
       title: {
@@ -160,7 +165,8 @@ function App() {
       },
       technologies: ["React JS"],
       link: "https://allthinc.com/",
-      imageUrl: "https://allthinc.com/assets/logo-DvBe2_ak.png",
+      imageUrl:
+        "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/fad7df67-a189-40a4-a480-da646de23e91",
     },
     {
       title: {
@@ -173,7 +179,8 @@ function App() {
       },
       technologies: ["React JS"],
       link: "https://www.interpreters.travel/en/",
-      imageUrl: "https://www.interpreters.travel/favicon.ico",
+      imageUrl:
+        "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/a0693ebe-12fb-42d3-be1e-2aa821a0bf58",
     },
     {
       title: {
@@ -186,7 +193,8 @@ function App() {
       },
       technologies: ["Laravel"],
       link: "https://yoberbagi.id/",
-      imageUrl: "https://yoberbagi.id/storage/COMPANY/ASSETS/LOGO/logo.png",
+      imageUrl:
+        "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/d4a46937-60b6-4abe-a3a2-23ab79efa4c7",
     },
     {
       title: {
@@ -200,7 +208,7 @@ function App() {
       technologies: ["React Js", "Typescript", "Node JS"],
       link: "http://agroobot.co.id/",
       imageUrl:
-        "https://agroobot.co.id/wp-content/uploads/2023/09/IMG_1218.png",
+        "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/503a9532-aea5-492b-9ef3-dfd02cb5b76c",
     },
     {
       title: {
@@ -213,7 +221,7 @@ function App() {
       },
       technologies: ["Codeigniter", "React Native"],
       imageUrl:
-        "https://media.licdn.com/dms/image/v2/C510BAQFXEkIE88w5VA/company-logo_200_200/company-logo_200_200/0/1630615396060?e=1741824000&v=beta&t=_QeQ71bkoEolyb8qhRJE0gs8I3BtnSo-p8ABJAE5uXI",
+        "https://cdn.dribbble.com/users/2378750/screenshots/6288225/futsaloka-20.png",
     },
     {
       title: {
@@ -227,7 +235,7 @@ function App() {
       technologies: ["Codeigniter"],
       link: "https://procurement.ykan.or.id/",
       imageUrl:
-        "https://www.ykan.or.id/content/dam/tnc/nature/en/logos/ykan/Logo_black.png",
+        "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/e9f0be3a-de7f-4ca2-b29d-76f5e8e8d395",
     },
     {
       title: {
@@ -241,6 +249,34 @@ function App() {
       technologies: ["Laravel"],
       imageUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtlQFYRb3U87kkISClG7WjrLRmYepgayAAg&s",
+    },
+    {
+      title: {
+        ID: "Aplikasi IGD RSUD",
+        EN: "Emergency Room Application at RSUD",
+      },
+      description: {
+        ID: "Aplikasi yang memudahkan Perawat dan Dokter melakukan pencatatan pemeriksaan dengan data yang saling terintegrasi. Fitur utama: Triage, Assessment Dokter, Assessment Perawat, Rencana Pelayanan dan lain-lain.",
+        EN: "An application that makes it easier for Nurses and Doctors to record examinations with integrated data. The main fiture: Triage, Doctor Assessment, Nurse Assessment, Service Plan, etc.",
+      },
+      technologies: ["React Native", "Android", "iOS"],
+      link: "https://play.google.com/store/apps/details?id=com.igdapp&hl=id",
+      imageUrl:
+        "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/631b90dd-6ef1-4198-be9b-b86627a79661",
+    },
+    {
+      title: {
+        ID: "Cuti Online",
+        EN: "Online Leave",
+      },
+      description: {
+        ID: "Aplikasi untuk memudahkan Pegawai Mengajukan Cuti bisa melalui Aplikasi di Smartphone kapanpun dan dimanapun ✓ Pengajuan Cuti Fitur yang sangat memudahkan Pegawai untuk mengajukan Cuti melalui Aplikasi di Smartphone ✓ Approval Fitur ini sangat memudahkan Atasan untuk memberikan persetujuan dengan informasi detail yang di dapatkan ✓ Status Cuti Pegawai bisa memeriksa posisi status pengajuan nya",
+        EN: "Application to make it easier for employees to apply for leave via the application on their smartphone anytime and anywhere ✓ Leave Submission A feature that makes it very easy for employees to apply for leave via the application on their smartphone ✓ Approval This feature makes it very easy for superiors to provide approval with detailed information obtained ✓ Leave Status Employees can check the status of their application",
+      },
+      technologies: ["React Native", "Android", "iOS"],
+      link: "https://play.google.com/store/apps/details?id=com.cutiapp&hl=id",
+      imageUrl:
+        "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/c50fa3ae-8f81-4cec-a5a8-b7e51e6b8b04",
     },
   ];
 
@@ -272,6 +308,17 @@ function App() {
   ];
 
   const testimonials = [
+    {
+      description: {
+        ID: "Bekerja dengan Pak Adi adalah pengalaman yang sangat menyenangkan. Ia mampu merealisasikan desain yang telah disepakati dengan sangat baik, cepat, dan tepat. Kemampuannya dalam slicing dan menangani bug patut diacungi jempol. Pak Adi juga sangat responsif terhadap perubahan, bahkan dalam situasi yang dinamis. Selain itu, beliau pribadi yang ramah, terbuka, dan enak diajak berdiskusi. Kolaborasi dengannya selalu terasa lancar dan produktif.",
+        EN: "Working with Mr. Adi has been a truly pleasant experience. He consistently translates approved designs into implementation with great accuracy and speed. His slicing skills and ability to handle bugs are impressive. He's also highly responsive to changes, even in dynamic situations. On top of that, he's friendly, open, and easy to talk to. Collaborating with him is always smooth and productive.",
+      },
+      name: "Alfan Pratama",
+      from: {
+        ID: "UI/UX Designer di Veritas Edukasi Lingkungan",
+        EN: "UI/UX Designer at Veritas Edukasi Lingkungan",
+      },
+    },
     {
       description: {
         ID: "Adi selalu menyelesaikan pekerjaan dengan cepat dan hasilnya pun selalu memuaskan. Komunikasinya juga sangat bagus, selalu responsif, dan memahami kebutuhan dengan detail. Sangat senang bisa bekerja sama dengannya!",
@@ -484,6 +531,20 @@ function App() {
                 rel="noreferrer"
                 className="underline">
                 {translations[language].youtube}
+              </a>
+              <a
+                href="https://www.upwork.com/freelancers/~01a9461874fc31127d"
+                target="_blank"
+                rel="noreferrer"
+                className="underline">
+                {translations[language].upwork}
+              </a>
+              <a
+                href="https://github.com/aghidayat"
+                target="_blank"
+                rel="noreferrer"
+                className="underline">
+                {translations[language].github}
               </a>
             </div>
           </div>
