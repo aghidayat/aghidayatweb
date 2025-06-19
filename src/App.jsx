@@ -58,7 +58,7 @@ function App() {
       },
       link: "https://ihsansolusi.co.id/",
       imageUrl:
-        "https://media.licdn.com/dms/image/v2/D560BAQGRO8-FXsQ0wQ/company-logo_200_200/company-logo_200_200/0/1688541140181/ihsan_solusi_informatika_logo?e=1750291200&v=beta&t=w8gTv-JwthMPeFYXvCLjwKdkc7pAG7RZHpEd5nUCfsI",
+        "https://media.licdn.com/dms/image/v2/D560BAQGRO8-FXsQ0wQ/company-logo_200_200/company-logo_200_200/0/1688541140181/ihsan_solusi_informatika_logo?e=1755734400&v=beta&t=402gy49P-UeStB_NOLlfA38xE5cbtzq3I4-p1El5ZbU",
     },
     {
       years: {
@@ -75,7 +75,7 @@ function App() {
       },
       link: "http://sirkel.id/",
       imageUrl:
-        "https://media.licdn.com/dms/image/v2/C510BAQE4aBRNpVLN9w/company-logo_100_100/company-logo_100_100/0/1630634639346/sirkeleducation_logo?e=1750291200&v=beta&t=vWw060kQ78Jthw76nkCeGFXXrayls9eEHC-L7J4cLqk",
+        "https://media.licdn.com/dms/image/v2/C510BAQE4aBRNpVLN9w/company-logo_200_200/company-logo_200_200/0/1630634639346/sirkeleducation_logo?e=1755734400&v=beta&t=G4OBHN0ULs8P0s6sBR2quZ0kCx5HobKw2cWJjosJHA4",
     },
     {
       years: {
@@ -92,7 +92,7 @@ function App() {
       },
       link: "https://dataquest.co.id/",
       imageUrl:
-        "https://media.licdn.com/dms/image/v2/C4D0BAQHwX5mTuFnDIQ/company-logo_100_100/company-logo_100_100/0/1631320215901?e=1750291200&v=beta&t=5LszdD8gKCnffq3V0r5rJEwPqiTLmXpHeXXrAKjvTUU",
+        "https://media.licdn.com/dms/image/v2/C4D0BAQHwX5mTuFnDIQ/company-logo_200_200/company-logo_200_200/0/1631320215901?e=1755734400&v=beta&t=4PSQg_b6w_Qi6fMFDCCWDai52w3yEB9-ZvO6wvViVLI",
     },
     {
       years: {
@@ -109,7 +109,7 @@ function App() {
       },
       link: "https://panenmaya.com/",
       imageUrl:
-        "https://media.licdn.com/dms/image/v2/C4D0BAQEIu5c4XX8CAg/company-logo_100_100/company-logo_100_100/0/1631335441236?e=1750291200&v=beta&t=8G95Z2be-0wCSvfGdvVnr6rGRSxkPKq_o9a1AyM8c9Y",
+        "https://media.licdn.com/dms/image/v2/C4D0BAQEIu5c4XX8CAg/company-logo_200_200/company-logo_200_200/0/1631335441236?e=1755734400&v=beta&t=g1bQeMm_SVekvw4JqSIi8b3B9iw8MHTn2-bnACcx8Rw",
     },
   ];
 
