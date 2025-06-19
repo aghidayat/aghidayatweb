@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 const TestimonialCard = ({ description, name, from }) => {
   return (
     <div className="border dark:border-gray-700 p-6 rounded-lg shadow-md bg-white dark:bg-gray-800">
@@ -9,4 +11,4 @@ const TestimonialCard = ({ description, name, from }) => {
   );
 };
 
-export default TestimonialCard;
+export default memo(TestimonialCard);

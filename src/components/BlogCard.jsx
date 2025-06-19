@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 const BlogCard = ({ title, description, link, imageUrl }) => {
   return (
     <a
@@ -10,6 +12,7 @@ const BlogCard = ({ title, description, link, imageUrl }) => {
           src={imageUrl}
           alt={title}
           className="w-full h-48 object-cover rounded-t-lg mb-4"
+          loading="lazy"
         />
       )}
       <h3 className="text-xl font-bold">{title}</h3>
@@ -18,4 +21,4 @@ const BlogCard = ({ title, description, link, imageUrl }) => {
   );
 };
 
-export default BlogCard;
+export default memo(BlogCard);

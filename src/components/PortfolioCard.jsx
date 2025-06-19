@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 const PortfolioCard = ({
   title,
   description,
@@ -12,6 +14,8 @@ const PortfolioCard = ({
           src={imageUrl}
           alt={title}
           className="w-full h-48 object-cover rounded-t-lg mb-4"
+          loading="lazy"
+          height={200}
         />
       )}
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
@@ -42,4 +46,4 @@ const PortfolioCard = ({
   );
 };
 
-export default PortfolioCard;
+export default memo(PortfolioCard);

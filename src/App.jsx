@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import ExperienceCard from "./components/ExperienceCard";
 import PortfolioCard from "./components/PortfolioCard";
 import BlogCard from "./components/BlogCard";
@@ -12,7 +12,7 @@ function App() {
       title: "Adi Gunawan Hidayat",
       subtitle: "Software Engineer",
       description:
-        "A passionate Fullstack Developer with over 6 years of experience creating powerful web applications. Skilled in leveraging modern technologies like Node.js, Express.js, React.js, and Tailwind, I deliver solutions that combine efficiency with elegance. My expertise spans Progressive Web Apps (PWAs), Git version control, Docker, and AWS cloud services. I thrive on crafting exceptional user experiences and writing clean, high-quality code that makes an impact.",
+        "Experienced software engineer with 8+ years of experience designing and developing scalable web and mobile applications. Strong expertise in building Learning Management Systems, banking and payment platforms, and document/regulatory management tools using Node.js, Python, and modern JavaScript frameworks. Skilled in DevOps practices, including containerization with Docker and orchestration using Kubernetes.",
       contact: "🤙 Let's Connect!",
       email: "Email",
       linkedin: "LinkedIn",
@@ -28,7 +28,7 @@ function App() {
       title: "Adi Gunawan Hidayat",
       subtitle: "Pengembang Perangkat Lunak",
       description:
-        "Seorang Pengembang Fullstack yang bersemangat dengan lebih dari 6 tahun pengalaman menciptakan aplikasi web yang andal. Terampil menggunakan teknologi modern seperti Node.js, Express.js, React.js, dan Tailwind untuk menghasilkan solusi yang efisien dan elegan. Keahlian saya meliputi Progressive Web Apps (PWAs), kontrol versi Git, Docker, dan layanan cloud AWS. Saya menikmati menciptakan pengalaman pengguna yang luar biasa dan menulis kode berkualitas tinggi yang memberikan dampak.",
+        "Software engineer berpengalaman dengan lebih dari 8 tahun dalam merancang dan mengembangkan aplikasi web dan mobile yang skalabel. Ahli dalam membangun Sistem Manajemen Pembelajaran, platform perbankan dan pembayaran, serta alat manajemen dokumen/regulasi menggunakan Node.js, Python, dan framework JavaScript modern. Terampil dalam praktik DevOps termasuk containerisasi dengan Docker dan orkestrasi menggunakan Kubernetes.",
       contact: "🤙 Hubungi Saya!",
       email: "Email",
       linkedin: "LinkedIn",
@@ -126,6 +126,7 @@ function App() {
       technologies: ["React Native", "Android", "Ios"],
       link: "https://vel.earth/sampapp",
       imageUrl: "https://vel.earth/landing/images/webp/hero-banner.webp",
+      slug: "samp-app",
     },
     {
       title: {
@@ -139,6 +140,7 @@ function App() {
       technologies: ["React Native", "Android", "Ios"],
       link: "https://recovered.id/",
       imageUrl: "https://recovered.id/staging/images/webp/ipst-toisapu.webp",
+      slug: "reco",
     },
     {
       title: {
@@ -153,6 +155,7 @@ function App() {
       link: "https://aghidayat-quran.vercel.app/",
       imageUrl:
         "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/ec675f17-d448-40f5-a91a-9c5607a44512",
+      slug: "read-quran-app",
     },
     {
       title: {
@@ -167,6 +170,7 @@ function App() {
       link: "https://allthinc.com/",
       imageUrl:
         "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/fad7df67-a189-40a4-a480-da646de23e91",
+      slug: "allthinc",
     },
     {
       title: {
@@ -181,6 +185,7 @@ function App() {
       link: "https://www.interpreters.travel/en/",
       imageUrl:
         "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/a0693ebe-12fb-42d3-be1e-2aa821a0bf58",
+      slug: "interpreters-travel",
     },
     {
       title: {
@@ -195,6 +200,7 @@ function App() {
       link: "https://yoberbagi.id/",
       imageUrl:
         "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/d4a46937-60b6-4abe-a3a2-23ab79efa4c7",
+      slug: "yoBerbagi-id",
     },
     {
       title: {
@@ -209,6 +215,7 @@ function App() {
       link: "http://agroobot.co.id/",
       imageUrl:
         "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/503a9532-aea5-492b-9ef3-dfd02cb5b76c",
+      slug: "agroobot",
     },
     {
       title: {
@@ -222,6 +229,7 @@ function App() {
       technologies: ["Codeigniter", "React Native"],
       imageUrl:
         "https://cdn.dribbble.com/users/2378750/screenshots/6288225/futsaloka-20.png",
+      slug: "futsaloka-id",
     },
     {
       title: {
@@ -236,6 +244,7 @@ function App() {
       link: "https://procurement.ykan.or.id/",
       imageUrl:
         "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/e9f0be3a-de7f-4ca2-b29d-76f5e8e8d395",
+      slug: "eproc-ykan",
     },
     {
       title: {
@@ -249,6 +258,7 @@ function App() {
       technologies: ["Laravel"],
       imageUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtlQFYRb3U87kkISClG7WjrLRmYepgayAAg&s",
+      slug: "chachamilktea-member",
     },
     {
       title: {
@@ -263,6 +273,7 @@ function App() {
       link: "https://play.google.com/store/apps/details?id=com.igdapp&hl=id",
       imageUrl:
         "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/631b90dd-6ef1-4198-be9b-b86627a79661",
+      slug: "igd-rsud",
     },
     {
       title: {
@@ -277,6 +288,7 @@ function App() {
       link: "https://play.google.com/store/apps/details?id=com.cutiapp&hl=id",
       imageUrl:
         "https://www.upwork.com/att/download/portfolio/persons/uid/626775236958453760/profile/projects/files/c50fa3ae-8f81-4cec-a5a8-b7e51e6b8b04",
+      slug: "cuti-online",
     },
   ];
 
@@ -366,6 +378,20 @@ function App() {
   const toggleDarkMode = () => setDarkMode(!darkMode);
   const changeLanguage = (lang) => setLanguage(lang);
 
+  const renderProject = useCallback(
+    (project, index) => (
+      <PortfolioCard
+        key={`project-${project.slug}-${index}`}
+        title={project.title[language]}
+        description={project.description[language]}
+        technologies={project.technologies}
+        link={project.link}
+        imageUrl={project.imageUrl}
+      />
+    ),
+    [language],
+  );
+
   return (
     <main
       className={`min-h-screen ${
@@ -415,7 +441,7 @@ function App() {
           <div className="grid gap-6">
             {experiences.map((experience, index) => (
               <ExperienceCard
-                key={index}
+                key={`experience-${index}`}
                 years={experience.years[language]}
                 title={experience.title[language]}
                 description={experience.description[language]}
@@ -432,16 +458,7 @@ function App() {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">📂 Projects</h2>
           <Pagination items={projects} itemsPerPage={3}>
-            {(project, index) => (
-              <PortfolioCard
-                key={index}
-                title={project.title[language]}
-                description={project.description[language]}
-                technologies={project.technologies}
-                link={project.link}
-                imageUrl={project.imageUrl}
-              />
-            )}
+            {renderProject}
           </Pagination>
         </div>
       </section>
@@ -454,7 +471,7 @@ function App() {
           </h2>
           <ul className="list-disc pl-6">
             {awards.map((award, index) => (
-              <li key={index} className="mb-4">
+              <li key={`awards-${index}`} className="mb-4">
                 {award}
               </li>
             ))}
@@ -469,7 +486,7 @@ function App() {
           <Pagination items={blogs} itemsPerPage={3}>
             {(blog, index) => (
               <BlogCard
-                key={index}
+                key={`blog-${index}`}
                 title={blog.title}
                 description={blog.description}
                 link={blog.link}
@@ -487,7 +504,7 @@ function App() {
           <Pagination items={testimonials} itemsPerPage={3}>
             {(testimonial, index) => (
               <TestimonialCard
-                key={index}
+                key={`testimonial-${index}`}
                 description={testimonial.description[language]} // Use the selected language for the description
                 name={testimonial.name} // Name remains the same
                 from={testimonial.from[language]} // Use the selected language for the "from" field
@@ -518,13 +535,6 @@ function App() {
                 className="underline">
                 {translations[language].linkedin}
               </a>
-              {/* <a
-                href="https://wa.me/6289627302553"
-                target="_blank"
-                rel="noreferrer"
-                className="underline">
-                {translations[language].whatsapp}
-              </a> */}
               <a
                 href="https://www.youtube.com/@aghidayat"
                 target="_blank"

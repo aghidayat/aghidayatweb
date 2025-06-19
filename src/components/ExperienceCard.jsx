@@ -1,12 +1,14 @@
+import { memo } from "react";
+
 const ExperienceCard = ({ years, title, description, link, imageUrl }) => {
   return (
     <div className="py-4 flex items-start space-x-4">
-      {/* Display the company logo if an imageUrl URL is provided */}
       {imageUrl && (
         <img
           src={imageUrl}
           alt={`${title} logo`}
           className="w-16 h-16 object-contain rounded"
+          loading="lazy"
         />
       )}
       <div>
@@ -30,4 +32,4 @@ const ExperienceCard = ({ years, title, description, link, imageUrl }) => {
   );
 };
 
-export default ExperienceCard;
+export default memo(ExperienceCard);
