@@ -5,9 +5,8 @@ import BlogCard from "./components/BlogCard";
 import TestimonialCard from "./components/TestimonialCard";
 import Pagination from "./components/Pagination";
 import FileCV from "./assets/Resume-Adi-Gunawan-Hidayat-2024.pdf";
-import { getDataWithExpiry, setCachedData } from "./utils/cache";
 
-const staticGeneral = {
+const general = {
   EN: {
     title: "Adi Gunawan Hidayat",
     subtitle: "Software Engineer",
@@ -42,7 +41,7 @@ const staticGeneral = {
   },
 };
 
-const staticExperiences = [
+const experiences = [
   {
     years: {
       ID: "2023 - Sekarang",
@@ -113,7 +112,21 @@ const staticExperiences = [
   },
 ];
 
-const staticProjects = [
+const projects = [
+  {
+    title: {
+      ID: "Masjidbox",
+      EN: "Masjidbox",
+    },
+    description: {
+      ID: "Solusi lengkap untuk memberdayakan masjid Anda. Semua yang Anda butuhkan untuk memperluas hubungan dengan jamaah, di dalam dan di luar tembok masjid Anda. Dari pusat Islam terkecil hingga yang paling berpengaruh, kami membantu memenuhi kebutuhan semua orang.",
+      EN: "The all-in-one solution to empower your mosque. Everything you need to expand your relationship with your worshippers, inside and beyond your mosque's walls. From the smallest to the most influential Islamic centres, we help the needs of all.",
+    },
+    technologies: ["React Native", "Node JS", "Swift", "Kotlin"],
+    link: "https://masjidbox.com/",
+    imageUrl: "https://masjidbox.com/images/homepage/screens.webp",
+    slug: "masjidbox-com",
+  },
   {
     title: {
       ID: "SampApp",
@@ -292,7 +305,7 @@ const staticProjects = [
   },
 ];
 
-const staticBlogs = [
+const blogs = [
   {
     title: "A Beginner’s Guide to System Design",
     description:
@@ -319,7 +332,7 @@ const staticBlogs = [
   },
 ];
 
-const staticTestimonials = [
+const testimonials = [
   {
     description: {
       ID: "Bekerja dengan Pak Adi adalah pengalaman yang sangat menyenangkan. Ia mampu merealisasikan desain yang telah disepakati dengan sangat baik, cepat, dan tepat. Kemampuannya dalam slicing dan menangani bug patut diacungi jempol. Pak Adi juga sangat responsif terhadap perubahan, bahkan dalam situasi yang dinamis. Selain itu, beliau pribadi yang ramah, terbuka, dan enak diajak berdiskusi. Kolaborasi dengannya selalu terasa lancar dan produktif.",
@@ -378,46 +391,6 @@ function App() {
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
   const changeLanguage = (lang) => setLanguage(lang);
-
-  const [general] = useState(() => {
-    const cached = getDataWithExpiry("general");
-    if (cached) return cached;
-
-    setCachedData("general", staticGeneral, 1000 * 60 * 60 * 24); // 1 hari
-    return staticGeneral;
-  });
-
-  const [experiences] = useState(() => {
-    const cached = getDataWithExpiry("experiences");
-    if (cached) return cached;
-
-    setCachedData("experiences", staticExperiences, 1000 * 60 * 60 * 24); // 1 hari
-    return staticExperiences;
-  });
-
-  const [projects] = useState(() => {
-    const cached = getDataWithExpiry("projects");
-    if (cached) return cached;
-
-    setCachedData("projects", staticProjects, 1000 * 60 * 60 * 24); // 1 hari
-    return staticProjects;
-  });
-
-  const [blogs] = useState(() => {
-    const cached = getDataWithExpiry("blogs");
-    if (cached) return cached;
-
-    setCachedData("blogs", staticBlogs, 1000 * 60 * 60 * 24); // 1 hari
-    return staticBlogs;
-  });
-
-  const [testimonials] = useState(() => {
-    const cached = getDataWithExpiry("testimonials");
-    if (cached) return cached;
-
-    setCachedData("testimonials", staticTestimonials, 1000 * 60 * 60 * 24); // 1 hari
-    return staticTestimonials;
-  });
 
   const renderProject = useCallback(
     (project) => (
