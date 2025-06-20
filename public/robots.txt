@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aghidayat.github.io/sitemap.xml

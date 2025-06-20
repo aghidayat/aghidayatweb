@@ -5,6 +5,7 @@ import BlogCard from "./components/BlogCard";
 import TestimonialCard from "./components/TestimonialCard";
 import Pagination from "./components/Pagination";
 import FileCV from "./assets/Resume-Adi-Gunawan-Hidayat-2024.pdf";
+import { Helmet } from "react-helmet";
 
 const general = {
   EN: {
@@ -411,6 +412,23 @@ function App() {
       className={`min-h-screen ${
         darkMode ? "dark" : "light"
       } transition-colors`}>
+      {/* ✅ Helmet SEO Meta Tags */}
+      <Helmet>
+        <title>
+          {general[language].title} - {general[language].subtitle}
+        </title>
+        <meta name="description" content={general[language].description} />
+        <meta name="author" content="Adi Gunawan Hidayat" />
+        <meta property="og:title" content="Adi Gunawan Hidayat Portfolio" />
+        <meta
+          property="og:description"
+          content={general[language].description}
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://aghidayat.github.io/" />
+      </Helmet>
+
+      {/* Header */}
       <header className="border-b dark:border-gray-800 py-6 px-4 sm:px-6">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-6 md:mb-0">
