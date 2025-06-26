@@ -1,16 +1,17 @@
 import { memo } from "react";
 
 const ExperienceCard = ({ years, title, description, link, imageUrl }) => {
+  const image = imageUrl
+    ? imageUrl
+    : "https://png.pngtree.com/png-vector/20221125/ourmid/pngtree-no-image-available-icon-flatvector-illustration-picture-coming-creative-vector-png-image_40968940.jpg";
   return (
     <div className="py-4 flex items-start space-x-4">
-      {imageUrl && (
-        <img
-          src={imageUrl}
-          alt={`${title} logo`}
-          className="w-16 h-16 object-contain rounded"
-          loading="lazy"
-        />
-      )}
+      <img
+        src={image}
+        alt={`${title} logo`}
+        className="w-16 h-16 object-contain rounded"
+        loading="lazy"
+      />
       <div>
         <h3 className="text-lg font-semibold mb-2">
           {link ? (

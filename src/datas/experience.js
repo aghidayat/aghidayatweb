@@ -69,8 +69,8 @@ const experiences = [
   },
   {
     years: {
-      ID: "2015 - 2017",
-      EN: "2015 - 2017",
+      ID: "2016 - 2017",
+      EN: "2016 - 2017",
     },
     title: {
       ID: "PT. Panenmaya Digital Consultant | Pengembang Frontend",
@@ -83,6 +83,22 @@ const experiences = [
     link: "https://panenmaya.com/",
     imageUrl:
       "https://media.licdn.com/dms/image/v2/C4D0BAQEIu5c4XX8CAg/company-logo_200_200/company-logo_200_200/0/1631335441236?e=1755734400&v=beta&t=g1bQeMm_SVekvw4JqSIi8b3B9iw8MHTn2-bnACcx8Rw",
+  },
+  {
+    years: {
+      ID: "2014 - 2016",
+      EN: "2014 - 2016",
+    },
+    title: {
+      ID: "PT. Jeneus Indonesia | Pengembang Fullstack",
+      EN: "PT. Jeneus Indonesia | Fullstack Developer",
+    },
+    description: {
+      ID: "Mengembangkan fitur aplikasi, mengelola konfigurasi server, dan merancang serta mengoptimalkan database untuk mendukung proses pengembangan end-to-end.",
+      EN: "Developed application features, managed server configurations, and designed as well as optimized databases to support end-to-end development.",
+    },
+    link: null,
+    imageUrl: null,
   },
 ];
 

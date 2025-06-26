@@ -73,6 +73,21 @@ const projects = [
   },
   {
     title: {
+      ID: "Bima Food And Fresh",
+      EN: "Bima Food And Fresh",
+    },
+    description: {
+      ID: "Aplikasi mobile e-commerce untuk penjualan sayur dan buah segar secara online, dilengkapi fitur pemesanan, pembayaran digital, serta layanan pengantaran langsung ke rumah pelanggan.",
+      EN: "A mobile e-commerce application for selling fresh vegetables and fruits online, featuring ordering, digital payments, and home delivery services.",
+    },
+    technologies: ["React Native", "Kotlin", "Swift"],
+    link: "https://play.google.com/store/apps/details?id=com.bimafoodnfresh",
+    imageUrl:
+      "https://play-lh.googleusercontent.com/x45t588xg7ngzlKp1Hr_rmQtT17RHgaaRNnHsE1CNfdNRA5zJj3vufedd9rLjHJSKOz3=w240-h480-rw",
+    slug: "bima-food-and-fresh",
+  },
+  {
+    title: {
       ID: "Interpreters.travel",
       EN: "Interpreters.travel",
     },

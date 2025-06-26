@@ -4,6 +4,7 @@ import awards from "./award";
 import blogs from "./blog";
 import projects from "./project";
 import testimonials from "./testimonial";
+import contact from "./contact";
 
 export {
     general,
@@ -11,5 +12,6 @@ export {
     awards,
     blogs,
     projects,
-    testimonials
+    testimonials,
+    contact
 }

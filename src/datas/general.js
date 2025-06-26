@@ -13,7 +13,13 @@ const general = {
     upwork: "Upwork",
     github: "Github",
     experiences: "Experiences",
+    awards: "Certifications & Awards",
+    testimonials: "Testimonials",
+    blogs: "Blog & Insights",
+    projects: "Projects",
     download_cv: "Download CV",
+    show_more: "Show More",
+    show_less: "Show Less",
   },
   ID: {
     title: "Adi Gunawan Hidayat",
@@ -29,7 +35,13 @@ const general = {
     upwork: "Upwork",
     github: "Github",
     experiences: "Pengalaman Bekerja",
+    awards: "Sertifikasi dan Penghargaan",
+    testimonials: "Testimonials",
+    blogs: "Blog & Insights",
+    projects: "Projects",
     download_cv: "Unduh CV",
+    show_more: "Tampilkan lebih banyak",
+    show_less: "Tampilkan lebih sedikit",
   },
 };
 
