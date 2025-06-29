@@ -1,4 +1,5 @@
 import { memo } from "react";
+import pkg from "../../package.json";
 
 const FooterSection = ({ general, language, contact }) => {
   return (
@@ -50,6 +51,10 @@ const FooterSection = ({ general, language, contact }) => {
             </a>
           </div>
         </div>
+      </div>
+      {/* Copyright section */}
+      <div className="mt-5 text-center text-sm">
+        © {new Date().getFullYear()} Adi Gunawan Hidayat — v{pkg.version}
       </div>
     </footer>
   );
